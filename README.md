@@ -14,7 +14,7 @@ This project consists of a microprocessor module designed to use OPCODE to perfo
 
 <h2>Environments Used </h2>
 
-- <b>ModelSim</b> (21H2)
+- <b>ModelSim</b>
 
 <h2>Program walk-through:</h2>
 
