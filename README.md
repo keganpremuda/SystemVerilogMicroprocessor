@@ -3,7 +3,7 @@
  <!--### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)-->
 
 <h2>Description</h2>
-This project consists of a microprocessor module designed to use OPCODE to perform arithmetic and logical functions on values stored in the register file, and to read and write new values to the register file depending on instructions sets stored in the ROM. The microprocessor contains ROM, a register file, an ALU, a write register, a control unit written as a Moore machine.
+This project consists of a microprocessor module designed to use OPCODE to perform arithmetic and logical functions on values stored in the register file and to read and write new values to the register file depending on the instruction sets stored in the ROM. The microprocessor contains ROM, a register file, an ALU, a write register, and a control unit written as a Moore machine.
 <br />
 
 
