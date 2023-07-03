@@ -20,27 +20,44 @@ This project consists of a microprocessor module designed using System Verilog i
 
 <p align="center">
 Microprocessor Program: <br/>
-<a href="https://github.com/keganpremuda/SystemVerilogMicroprocessor/blob/main/microp.sv">microp.sv</a><br>
+<a href="https://github.com/keganpremuda/SystemVerilogMicroprocessor/blob/main/microp.sv">microp.sv</a><br></p>
+<p align="left">
+The microprocessor program is a parent module with child modules of the ROM, register file, ALU, a twos complement module, an 8-bit full adder, write register, a program counter (sequential block within the control unit), an instruction register (within the parent module), and control unit (finite state machine within the control  unit). All child modules were previously created and simulated, along with a test bench and physical validation if necessary. The program was written and simulated in ModelSim to debug any initial errors and warnings.</p>
 <br />
 <br />
+<p align="center">
 Microprocessor Program Test Bench  <br/>
-<a href="https://github.com/keganpremuda/SystemVerilogMicroprocessor/blob/main/microp_testbench.sv">microp_testbench.sv</a><br>
+<a href="https://github.com/keganpremuda/SystemVerilogMicroprocessor/blob/main/microp_testbench.sv">microp_testbench.sv</a><br></p>
+<p align="left">
+A test bench program was written to test the functionality of the microprocessor by clocking through a program written to go through all of the OPCODE stored on the ROM and displaying the results on the terminal display of ModelSim, as well as writing the data to a CSV log file. The results were analyzed to ensure proper function during all steps of the program.</p>
 <br />
 <br />
+<p align="center">
 Log File From Test Bench: <br/>
-<a href="https://github.com/keganpremuda/SystemVerilogMicroprocessor/blob/main/microp_logfile.csv">microp_logfile.csv</a><br>
+<a href="https://github.com/keganpremuda/SystemVerilogMicroprocessor/blob/main/microp_logfile.csv">microp_logfile.csv</a><br></p>
+<p align="left">
+The log file shows the value of the program counter, the instruction register, OPCODE, register A, B, and D of the register file, the write register, and the carry-out and overflow of the ALU.
 <br />
 <br />
+<p align="center">
 Physical Validation Program For Microprocessor:  <br/>
-<a href="https://github.com/keganpremuda/SystemVerilogMicroprocessor/blob/main/microp_physicalValidation.sv">microp_physicalValidation.sv</a><br>
+<a href="https://github.com/keganpremuda/SystemVerilogMicroprocessor/blob/main/microp_physicalValidation.sv">microp_physicalValidation.sv</a><br></p>
+<p align="left">
+The physical validation was created by instantiating the microprocessor module, assigning variables and values to appropriate switches, LEDs, buttons, and 7-segment displays, instantiating an ASCII to 7-segment display conversion module, and instantiating a frequency divider module to assist in slower clocking speeds and manual clocking on the program.</p>
 <br />
 <br />
+<p align="center">
 Physical Validation Program Test Bench:  <br/>
-<a href="https://github.com/keganpremuda/SystemVerilogMicroprocessor/blob/main/microp_physicalValidation_testbench.sv">microp_physicalValidation_testbench.sv</a><br>
+<a href="https://github.com/keganpremuda/SystemVerilogMicroprocessor/blob/main/microp_physicalValidation_testbench.sv">microp_physicalValidation_testbench.sv</a><br></p>
+<p align="left">
+A physical validation test bench was created to confirm the desired functionality of the switches, LEDs, buttons, and 7-segment display before the actual physical validation.</p>
 <br />
 <br />
+<p align="center">
 Physical Validation:  <br><br/>
-<img src="https://i.imgur.com/cQ2aEcH.jpg" height="40%" width="40%" alt="Physical Validation Picture 1"/>
+<img src="https://i.imgur.com/cQ2aEcH.jpg" height="40%" width="40%" alt="Physical Validation Picture 1"/></p>
+<p align="left">
+A physical validation of the program written during the microprocessor test bench was conducted as a final test of the functionality of the microprocessor.</p><br><br><br>
 </p>
 
 <!--
