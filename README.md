@@ -7,14 +7,14 @@ This project consists of a microprocessor module designed using System Verilog i
 <br />
 
 
-<h2>Languages and Utilities Used</h2>
+<h2>Languages Used</h2>
 
 - <b>System Verilog</b> 
-- <b>Quartus Prime</b>
 
 <h2>Environments Used </h2>
 
 - <b>ModelSim</b>
+- <b>Quartus Prime</b>
 
 <h2>Project walk-through:</h2>
 
