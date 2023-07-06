@@ -3,7 +3,7 @@
  <!--### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)-->
 
 <h2>Description</h2>
-This project consists of a microprocessor module designed using System Verilog in the IDE ModelSim to process OPCODE to perform arithmetic and logical functions on values stored in the register file, and to read and write new values to the register file depending on the instruction sets stored in the ROM. The microprocessor contains ROM, a register file, an ALU, a write register, and a control unit written as a Moore machine. The microprocessor module was tested, and then a physical validation was created and tested to validate the functionality of the microprocessor program on the Cyclone V FPGA.
+This project consists of a microprocessor module designed using System Verilog in the ModelSim IDE to process OPCODE to perform arithmetic and logical functions on values stored in the register file and to read and write new values to the register file depending on the instruction sets stored in the ROM. The microprocessor contains ROM, a register file, an ALU, a write register, and a control unit written as a Moore machine. The microprocessor module was tested, and then a physical validation was created and tested to validate the functionality of the microprocessor program on the Cyclone V FPGA.
 <br />
 
 
@@ -29,7 +29,7 @@ The microprocessor program is a parent module with child modules which include t
 <b>Microprocessor Program Test Bench:</b>  <br/>
 <a href="https://github.com/keganpremuda/SystemVerilogMicroprocessor/blob/main/microp_testbench.sv">microp_testbench.sv</a><br></p>
 <p align="left">
-A test bench program was written to test the functionality of the microprocessor by clocking through the entire test program within the ROM and displaying the results on the terminal display of ModelSim, as well as writing the data to a CSV log file. The results were analyzed to ensure proper function during all steps of the test program.</p>
+A test bench program was written to test the functionality of microp.sv by clocking through the entire test program within the ROM and displaying the results on the terminal display of ModelSim, as well as writing the data to a CSV log file. The results were analyzed to ensure proper function during all steps of the test program.</p>
 <br />
 <br />
 <p align="center">
@@ -43,7 +43,7 @@ The log file shows the value of the program counter, the instruction register, O
 <b>Physical Validation Program For Microprocessor:</b>  <br/>
 <a href="https://github.com/keganpremuda/SystemVerilogMicroprocessor/blob/main/microp_physicalValidation.sv">microp_physicalValidation.sv</a><br></p>
 <p align="left">
-The physical validation was created by instantiating the microprocessor module, assigning variables and values to appropriate switches, LEDs, buttons, and 7-segment displays, instantiating an ASCII to 7-segment display conversion module, and instantiating a frequency divider module. The frequency divider reduces the 25MHz clock on the FPGA to 1000Hz, and the microprocessor module enables the ability to switch from the 1000Hz clock to a manual clocking using a button on the board.</p>
+The physical validation was created by instantiating the microprocessor module, assigning variables and values to appropriate switches, LEDs, buttons, and 7-segment displays, instantiating an ASCII to 7-segment display conversion module, and instantiating a frequency divider module. The frequency divider reduces the 25MHz clock on the FPGA to 1000Hz, and the microprocessor module has a feature that enables the ability to switch from the 1000Hz clock to a manual clocking using a button on the board.</p>
 <br />
 <br />
 <p align="center">
